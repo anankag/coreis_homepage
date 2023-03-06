@@ -49,39 +49,77 @@ export function Header() {
             <a className="menu-items-a" href="#">
               Հոդվածներ
             </a>
+          </li>
+          <li className="header-menu-li">
+            <a className="menu-items-a" href="#">
+              Կլինիկական Քեյսեր
+            </a>
+          </li>
+          <li className="header-menu-li">
+            <a className="menu-items-a" href="#">
+              Դասընթացներ
+            </a>
             <div class="dropdown-content">
               <ul className="dropdown-menu-ul">
-               <li> <a href="#">Հոդվածներ</a></li>
-               <li> <a href="#">Հոդվածներ</a></li>
-               <li> <a href="#">Հոդվածներ</a></li>
-            </ul></div>
+                <li>
+                  {" "}
+                  <a href="#">Վեբինարներ</a>
+                </li>
+                <li>
+                  <a href="#">Սեմինար</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li className="header-menu-li">
             <a className="menu-items-a" href="#">
-              Հոդվածներ
+              Պացիենտների համար
             </a>
+            <div class="dropdown-content">
+              <ul className="dropdown-menu-ul">
+                <li>
+                  {" "}
+                  <a href="#">Իրադարձություններ</a>
+                </li>
+                <li>
+                  <a href="#">Տեղեկություններ</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li className="header-menu-li">
             <a className="menu-items-a" href="#">
-              Հոդվածներ
-            </a>
-          </li>
-          <li className="header-menu-li">
-            <a className="menu-items-a" href="#">
-              Հոդվածներ
-            </a>
-          </li>
-          <li className="header-menu-li">
-            <a className="menu-items-a" href="#">
-              Հոդվածներ
-            </a>
+              Մեր Ակումբը
+            </a> 
+             <div class="dropdown-content">
+              <ul className="dropdown-menu-ul">
+                <li>
+                  {" "}
+                  <a href="#">Մեր Մասին</a>
+                </li>
+                <li>
+                  <a href="#">Խումբը Facebook-ում</a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
         <ul className="menu-last-item">
           <li className="menu-last-item-li">
             <a className="menu-last-item-a" href="#">
-              Հոդվածներ
+              Մուտք
             </a>
+            <div class="dropdown-content">
+              <ul className="dropdown-menu-ul">
+                <li>
+                  {" "}
+                  <a href="#">Մուտք</a>
+                </li>
+                <li>
+                  <a href="#">Գրանցվել</a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
