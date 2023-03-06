@@ -7,7 +7,7 @@ import {
   faYoutube,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import logo from "../assets/images/logo.png"
+import logo from "../assets/images/logo.png";
 
 export function Header() {
   return (
@@ -40,8 +40,50 @@ export function Header() {
           </li>
         </ul>
       </div>
-      <div>
-        <a href="#"> <img className="logo" src={logo} /></a>
+      <div className="left-menu">
+        <a className="logo" href="#">
+          <img className="logo" src={logo} />
+        </a>
+        <ul className="header-menu-ul">
+          <li className="header-menu-li">
+            <a className="menu-items-a" href="#">
+              Հոդվածներ
+            </a>
+            <div class="dropdown-content">
+              <ul className="dropdown-menu-ul">
+               <li> <a href="#">Հոդվածներ</a></li>
+               <li> <a href="#">Հոդվածներ</a></li>
+               <li> <a href="#">Հոդվածներ</a></li>
+            </ul></div>
+          </li>
+          <li className="header-menu-li">
+            <a className="menu-items-a" href="#">
+              Հոդվածներ
+            </a>
+          </li>
+          <li className="header-menu-li">
+            <a className="menu-items-a" href="#">
+              Հոդվածներ
+            </a>
+          </li>
+          <li className="header-menu-li">
+            <a className="menu-items-a" href="#">
+              Հոդվածներ
+            </a>
+          </li>
+          <li className="header-menu-li">
+            <a className="menu-items-a" href="#">
+              Հոդվածներ
+            </a>
+          </li>
+        </ul>
+        <ul className="menu-last-item">
+          <li className="menu-last-item-li">
+            <a className="menu-last-item-a" href="#">
+              Հոդվածներ
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
   );
