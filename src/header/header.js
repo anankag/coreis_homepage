@@ -41,67 +41,67 @@ function Header() {
         </ul>
       </div>
       <div className="left-menu">
-        <div className="d-flex"> 
-        <a className="logo" href="#">
-          <img className="logo" src={logo} />
-        </a>
-        <ul className="header-menu-ul">
-          <li className="header-menu-li">
-            <a className="menu-items-a" href="#">
-              Հոդվածներ
-            </a>
-          </li>
-          <li className="header-menu-li">
-            <a className="menu-items-a" href="#">
-              Կլինիկական Քեյսեր
-            </a>
-          </li>
-          <li className="header-menu-li">
-            <a className="menu-items-a" href="#">
-              Դասընթացներ
-            </a>
-            <div class="dropdown-content">
-              <ul className="dropdown-menu-ul">
-                <li>
-                  <a href="#">Վեբինարներ</a>
-                </li>
-                <li>
-                  <a href="#">Սեմինար</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li className="header-menu-li">
-            <a className="menu-items-a" href="#">
-              Պացիենտների համար
-            </a>
-            <div class="dropdown-content">
-              <ul className="dropdown-menu-ul">
-                <li>
-                  <a href="#">Իրադարձություններ</a>
-                </li>
-                <li>
-                  <a href="#">Տեղեկություններ</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li className="header-menu-li">
-            <a className="menu-items-a" href="#">
-              Մեր Ակումբը
-            </a> 
-             <div class="dropdown-content">
-              <ul className="dropdown-menu-ul">
-                <li>
-                  <a href="#">Մեր Մասին</a>
-                </li>
-                <li>
-                  <a href="#">Խումբը Facebook-ում</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+        <div className="d-flex">
+          <a className="logo" href="#">
+            <img className="logo" src={logo} />
+          </a>
+          <ul className="header-menu-ul">
+            <li className="header-menu-li">
+              <a className="menu-items-a" href="#">
+                Հոդվածներ
+              </a>
+            </li>
+            <li className="header-menu-li">
+              <a className="menu-items-a" href="#">
+                Կլինիկական Քեյսեր
+              </a>
+            </li>
+            <li className="header-menu-li">
+              <a className="menu-items-a" href="#">
+                Դասընթացներ
+              </a>
+              <div class="dropdown-content">
+                <ul className="dropdown-menu-ul">
+                  <li>
+                    <a href="#">Վեբինարներ</a>
+                  </li>
+                  <li>
+                    <a href="#">Սեմինար</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li className="header-menu-li">
+              <a className="menu-items-a" href="#">
+                Պացիենտների համար
+              </a>
+              <div class="dropdown-content">
+                <ul className="dropdown-menu-ul">
+                  <li>
+                    <a href="#">Իրադարձություններ</a>
+                  </li>
+                  <li>
+                    <a href="#">Տեղեկություններ</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li className="header-menu-li">
+              <a className="menu-items-a" href="#">
+                Մեր Ակումբը
+              </a>
+              <div class="dropdown-content">
+                <ul className="dropdown-menu-ul">
+                  <li>
+                    <a href="#">Մեր Մասին</a>
+                  </li>
+                  <li>
+                    <a href="#">Խումբը Facebook-ում</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
         <ul className="menu-last-item">
           <li className="menu-last-item-li">
@@ -115,8 +115,6 @@ function Header() {
                 </li>
                 <li>
                   <a href="#">Գրանցվել</a>
-
-                  
                 </li>
               </ul>
             </div>
