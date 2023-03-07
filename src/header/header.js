@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import logo from "../assets/images/logo.png";
 
-export function Header() {
+function Header() {
   return (
     <header className="header">
       <div className="header-icons">
@@ -41,6 +41,7 @@ export function Header() {
         </ul>
       </div>
       <div className="left-menu">
+        <div className="d-flex"> 
         <a className="logo" href="#">
           <img className="logo" src={logo} />
         </a>
@@ -62,7 +63,6 @@ export function Header() {
             <div class="dropdown-content">
               <ul className="dropdown-menu-ul">
                 <li>
-                  {" "}
                   <a href="#">Վեբինարներ</a>
                 </li>
                 <li>
@@ -78,7 +78,6 @@ export function Header() {
             <div class="dropdown-content">
               <ul className="dropdown-menu-ul">
                 <li>
-                  {" "}
                   <a href="#">Իրադարձություններ</a>
                 </li>
                 <li>
@@ -94,7 +93,6 @@ export function Header() {
              <div class="dropdown-content">
               <ul className="dropdown-menu-ul">
                 <li>
-                  {" "}
                   <a href="#">Մեր Մասին</a>
                 </li>
                 <li>
@@ -104,6 +102,7 @@ export function Header() {
             </div>
           </li>
         </ul>
+        </div>
         <ul className="menu-last-item">
           <li className="menu-last-item-li">
             <a className="menu-last-item-a" href="#">
@@ -112,7 +111,6 @@ export function Header() {
             <div class="dropdown-content">
               <ul className="dropdown-menu-ul">
                 <li>
-                  {" "}
                   <a href="#">Մուտք</a>
                 </li>
                 <li>
