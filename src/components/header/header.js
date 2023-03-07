@@ -1,5 +1,5 @@
 import React from "react";
-import "/Users/anna/coreis-homepage/src/header/header.css";
+import "./styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -7,7 +7,7 @@ import {
   faYoutube,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import logo from "../assets/images/logo.png";
+import logo from "../../assets/images/logo.png";
 
 function Header() {
   return (

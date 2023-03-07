@@ -4,12 +4,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/swiper.css";
 import "swiper/css/bundle";
-import "/Users/anna/coreis-homepage/src/swiper/swiper.css";
+import "./styles.css";
 import { Navigation } from "swiper";
-import slider1 from "/Users/anna/coreis-homepage/src/assets/images/slide1.png";
-import slider2 from "/Users/anna/coreis-homepage/src/assets/images/slider2.png";
-import slider3 from "/Users/anna/coreis-homepage/src/assets/images/slider3.png";
-import slider4 from "/Users/anna/coreis-homepage/src/assets/images/slider4.png";
+import slider1 from "../../assets/images/slide1.png";
+import slider2 from "../../assets/images/slider2.png";
+import slider3 from "../../assets/images/slider3.png";
+import slider4 from "../../assets/images/slider4.png";
 
 function Slider() {
   return (

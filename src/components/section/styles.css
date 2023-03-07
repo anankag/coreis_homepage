@@ -1,0 +1,31 @@
+.section {
+  margin: 20px auto;
+  width: 90%;
+}
+.section-title {
+  color: #892d32;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+.status-text {
+  padding: 90px 0;
+
+  margin: 0 20px;
+  font-size: 20px;
+}
+.section-line {
+  padding: 0 20px;
+  border-bottom: 0.9px solid rgb(131, 126, 126);
+  margin: 0 auto;
+  width: 70%;
+}
+.button-a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #892d32;
+  border-radius: 4px;
+  padding: 18px 30px; 
+  display: inline-block;
+  float: right;
+
+}
+
