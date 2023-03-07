@@ -115,6 +115,8 @@ function Header() {
                 </li>
                 <li>
                   <a href="#">Գրանցվել</a>
+
+                  
                 </li>
               </ul>
             </div>
