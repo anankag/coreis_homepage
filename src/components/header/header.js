@@ -16,26 +16,38 @@ function Header() {
         <ul className="icons-ul">
           <li className="facebook">
             <a className="facebook" href="#">
-              <i class="icon-i"> </i>
-              <FontAwesomeIcon size="lg" icon={faFacebook}></FontAwesomeIcon>
+              <i class="icon-i">
+                {" "}
+                <FontAwesomeIcon size="lg" icon={faFacebook}></FontAwesomeIcon>
+              </i>
             </a>
           </li>
           <li className="instagram">
             <a className="instagram" href="#">
-              <i class="icon-i"> </i>
-              <FontAwesomeIcon size="lg" icon={faInstagram}></FontAwesomeIcon>
+              <i class="icon-i">
+                {" "}
+                <FontAwesomeIcon
+                  size="lg"
+                  icon={faInstagram}></FontAwesomeIcon>{" "}
+              </i>
             </a>
           </li>
           <li className="youtube">
             <a className="youtube" href="#">
-              <i class="icon-i"> </i>
-              <FontAwesomeIcon size="lg" icon={faYoutube}></FontAwesomeIcon>
+              <i class="icon-i">
+                {" "}
+                <FontAwesomeIcon size="lg" icon={faYoutube}></FontAwesomeIcon>
+              </i>
             </a>
           </li>
           <li className="linkedin">
             <a className="linkedin" href="#">
-              <i class="icon-i"> </i>
-              <FontAwesomeIcon size="lg" icon={faLinkedin}></FontAwesomeIcon>
+              <i class="icon-i">
+                {" "}
+                <FontAwesomeIcon
+                  size="lg"
+                  icon={faLinkedin}></FontAwesomeIcon>{" "}
+              </i>
             </a>
           </li>
         </ul>

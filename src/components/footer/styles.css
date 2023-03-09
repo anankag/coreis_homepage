@@ -1,0 +1,121 @@
+.footer {
+  background-color: #2c2f40;
+  margin-top: 170px;
+  height: 520px;
+  width: 100%;
+}
+.mainDiv {
+  padding-top: 40px;
+  margin: 0 auto;
+  max-width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-intro {
+  width: 220px;
+  height: auto;
+  display: inline-block;
+  padding-top: 20px;
+}
+.img-logo {
+  height: auto;
+  width: 290px;
+}
+.intro-text {
+  color: #eaeaea;
+  width: 400px;
+  font-size: 15px;
+  padding-top: 15px;
+}
+.about-us {
+  color: #eaeaea;
+  line-height: 1px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.about-us-ul {
+  list-style: none;
+  color: #eaeaea;
+}
+.about-us-ul a {
+  line-height: 0.7cm;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 500;
+}
+.footer-about-us {
+  margin-left: 140px;
+  display: inline-block;
+}
+.contact-us-ul {
+  margin-top: 70px;
+  list-style: none;
+}
+.contact-us-ul a {
+  line-height: 0.7cm;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 500;
+}
+.about-us-ul a:hover {
+  color: #892c32;
+}
+.contact-us-ul a:hover {
+  color: #892c32;
+}
+.contact-us-ul h4 {
+  color: #eaeaea;
+  line-height: 1;
+  font-size: 15px;
+  font-weight: 700;
+}
+.social-media-ul {
+  list-style: none;
+}
+.social-media-ul a {
+  text-decoration: none;
+  color: #aaa;
+}
+.social-media-li {
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+}
+.references{
+    padding-right: 20px;
+}
+.references-ul {
+  list-style: none;
+}
+.references-ul h4 {
+  color: #eaeaea;
+  line-height: 1;
+  font-size: 15px;
+  font-weight: 700;
+}
+.references-ul a {
+  text-decoration: none;
+  color: #aaa;
+}
+.references-ul a {
+  line-height: 0.7cm;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 500;
+}
+.references-ul a:hover {
+  color: #892c32;
+}
+.below-text {
+    font-weight: 300;
+    color: #ccc;
+    font-size: 12px;
+    font-family: "Open Sans", "Open Sans Regular", sans-serif;
+    text-align: center;
+    padding-top: 60px ;
+}
