@@ -15,7 +15,7 @@
   width: 220px;
   height: auto;
   display: inline-block;
-  padding-top: 20px;
+  padding-top: 18px;
 }
 .img-logo {
   height: auto;
@@ -29,13 +29,12 @@
 }
 .about-us {
   color: #eaeaea;
-  line-height: 1px;
   font-size: 15px;
   font-weight: 700;
 }
 .about-us-ul {
   list-style: none;
-  color: #eaeaea;
+  
 }
 .about-us-ul a {
   line-height: 0.7cm;
@@ -48,11 +47,11 @@
   display: inline-block;
 }
 .contact-us-ul {
+  line-height: 0.7cm;
   margin-top: 70px;
   list-style: none;
 }
 .contact-us-ul a {
-  line-height: 0.7cm;
   text-decoration: none;
   color: #aaa;
   font-weight: 500;
@@ -65,7 +64,6 @@
 }
 .contact-us-ul h4 {
   color: #eaeaea;
-  line-height: 1;
   font-size: 15px;
   font-weight: 700;
 }
@@ -86,24 +84,20 @@
   width: 35px;
   height: 35px;
 }
-.references{
-    padding-right: 20px;
+.references {
+  padding-right: 20px;
 }
 .references-ul {
   list-style: none;
+  line-height: 0.7cm;
 }
 .references-ul h4 {
   color: #eaeaea;
-  line-height: 1;
   font-size: 15px;
   font-weight: 700;
 }
+
 .references-ul a {
-  text-decoration: none;
-  color: #aaa;
-}
-.references-ul a {
-  line-height: 0.7cm;
   text-decoration: none;
   color: #aaa;
   font-weight: 500;
@@ -112,10 +106,10 @@
   color: #892c32;
 }
 .below-text {
-    font-weight: 300;
-    color: #ccc;
-    font-size: 12px;
-    font-family: "Open Sans", "Open Sans Regular", sans-serif;
-    text-align: center;
-    padding-top: 60px ;
+  font-weight: 300;
+  color: #ccc;
+  font-size: 12px;
+  font-family: "Open Sans", "Open Sans Regular", sans-serif;
+  text-align: center;
+  margin-top: 84px;
 }
