@@ -9,7 +9,7 @@ function Section({ title, subTitle }) {
       <p className="status-text"> {subTitle}</p>
       <div className="section-line">
       </div> 
-      <a href="#" className="button-a">
+      <a href="/" className="button-a">
             Դիտել ավելին
           </a>
     </div>

@@ -23,22 +23,22 @@ function Slider() {
         className="mySwiper">
         <SwiperSlide>
           <div className="overlay">
-            <img src={slider1} />
+            <img src={slider1} alt="slider img"/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="overlay">
-            <img src={slider2} />
+            <img src={slider2} alt="slider img"/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="overlay">
-            <img src={slider3} />
+            <img src={slider3} alt="slider img"/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="overlay">
-            <img src={slider4} />
+            <img src={slider4} alt="slider img"/>
           </div>
         </SwiperSlide>
       </Swiper>

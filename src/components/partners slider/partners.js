@@ -14,16 +14,16 @@ function Partners() {
                     size="lg"
                     icon={faChevronLeft}></FontAwesomeIcon></div>
         <div className="slider-img">
-          <img src={partner1} />
+          <img src={partner1} alt="partner"/>
         </div>
-        <div className="slider-img">
-          <img src={partner2} />
+        <div className="slider-img" >
+          <img src={partner2} alt="partner"/>
         </div>
-        <div className="slider-img">
-          <img src={partner1} />
+        <div className="slider-img" >
+          <img src={partner1} alt="partner"/>
         </div>
-        <div className="slider-img">
-          <img src={partner2} />
+        <div className="slider-img" alt="partner">
+          <img src={partner2} alt="partner"/>
         </div>
        <div className="arrow-next"> <FontAwesomeIcon
                     size="lg"

@@ -14,7 +14,7 @@ function Footer() {
     <footer className="footer">
       <div className="mainDiv">
         <div className="logo-intro">
-          <img className="img-logo" src={logo}></img>
+          <img className="img-logo" src={logo} alt="logo" ></img>
           <p className="intro-text">
             {" "}
             CORE IS-ը ստոմատոլոգիական գիտելիքների կատարելագործմանն ուղղված
@@ -27,42 +27,38 @@ function Footer() {
           <ul className="about-us-ul">
             <h4 className="about-us">Մեր մասին</h4>
             <li className="about-us-li">
-              <a href="#">Մեր թիմը</a>
+              <a href="/">Մեր թիմը</a>
             </li>
             <li className="about-us-li">
-              <a href="#">Մեր ակումբի մասին</a>
+              <a href="/">Մեր ակումբի մասին</a>
             </li>
             <li className="about-us-li">
-              <a href="#">Ինչպես դառնալ ակումբի անդամ</a>
+              <a href="/">Ինչպես դառնալ ակումբի անդամ</a>
             </li>
           </ul>
 
           <ul className="contact-us-ul">
             <h4 className="contact-us">Կապվել մեզ հետ</h4>
             <li className="contact-us-li">
-              <a href="#">support@coreis.am</a>
+              <a href="/">support@coreis.am</a>
             </li>
             <li className="contact-us-li">
-              <a href="#">+37433151151</a>
+              <a href="/">+37433151151</a>
             </li>
           </ul>
           <ul className="social-media-ul">
             <li className="social-media-li">
-              {" "}
-              <a href="#">
+              <a href="/">
                 <i>
-                  {" "}
                   <FontAwesomeIcon
                     size="lg"
-                    icon={faInstagram}></FontAwesomeIcon>{" "}
+                    icon={faInstagram}></FontAwesomeIcon>
                 </i>
               </a>
             </li>
             <li className="social-media-li">
-              {" "}
-              <a href="#">
+              <a href="/">
                 <i>
-                  {" "}
                   <FontAwesomeIcon
                     size="lg"
                     icon={faFacebook}></FontAwesomeIcon>
@@ -70,31 +66,25 @@ function Footer() {
               </a>
             </li>
             <li className="social-media-li">
-              <a href="#">
-                {" "}
+              <a href="/">
                 <i>
-                  {" "}
                   <FontAwesomeIcon size="lg" icon={faUsers}></FontAwesomeIcon>
                 </i>
               </a>
             </li>
             <li className="social-media-li">
-              <a href="#">
-                {" "}
+              <a href="/">
                 <i>
-                  {" "}
                   <FontAwesomeIcon size="lg" icon={faYoutube}></FontAwesomeIcon>
                 </i>
               </a>
             </li>
             <li className="social-media-li">
-              <a href="#">
-                {" "}
+              <a href="/">
                 <i>
-                  {" "}
                   <FontAwesomeIcon
                     size="lg"
-                    icon={faLinkedin}></FontAwesomeIcon>{" "}
+                    icon={faLinkedin}></FontAwesomeIcon>
                 </i>
               </a>
             </li>
@@ -104,13 +94,13 @@ function Footer() {
           <ul className="references-ul">
             <h4 className="references-h4">Օգտակար հղումներ</h4>
             <li className="references-li">
-              <a href="#">Ավելացնել կլինիկական քեյս</a>
+              <a href="/">Ավելացնել կլինիկական քեյս</a>
             </li>
             <li className="references-li">
-              <a href="#">Իրադարձություններ</a>
+              <a href="/">Իրադարձություններ</a>
             </li>
             <li className="references-li">
-              <a href="#">Հաճախակի տրվող հարցեր</a>
+              <a href="/">Հաճախակի տրվող հարցեր</a>
             </li>
           </ul>
         </div>

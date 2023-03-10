@@ -4,10 +4,14 @@ import Slider from "../components/swiper/swiper";
 import Section from "../components/section/section";
 import Partners from "../components/partners slider/partners";
 import Footer from "../components/footer/footer";
+import Scroll from "../components/scrollUp/scroll"
+
 
 function Home() {
+
   return (
     <>
+    <Scroll/>
       <Header />
       <Slider />
       <Section
@@ -21,5 +25,5 @@ function Home() {
     </>
   );
 }
-
+ 
 export default Home;
