@@ -11,13 +11,6 @@ function Modal(props) {
   const [password, setPassword] = useState("");
   const [number, setNumber] = useState("");
 
-  const submit =  () => {
-    axios.get("https:/fafafafa", {
-      mail,
-      password,
-    });
-    return result;
-  };
 
   return (
     <Popup open={props.openModal} modal>
