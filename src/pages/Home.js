@@ -6,13 +6,12 @@ import Partners from "../components/partners slider/partners";
 import Footer from "../components/footer/footer";
 import Scroll from "../components/scrollUp/scroll"
 
-
 function Home() {
 
   return (
     <>
-    <Scroll/>
-      <Header />
+    <Scroll />
+      <Header/>
       <Slider />
       <Section
         title={"ՈՒՍԱՆՈՂՆԵՐԻ ՀԱՄԱՐ"}

@@ -7,23 +7,24 @@ import {
   faYoutube,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { faUser, faLock } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../assets/images/logo.png";
-import Popup from "reactjs-popup";
-import "reactjs-popup/dist/index.css";
+import Modal from "../modal/modal";
 
-function Header() {
-  const hiddenStyle = {
-      display: "none",
-  }
-  const ShowStyle = {
-    display: "block",
-}
-  const [active, setActive] = useState("1");
-  const changeActive = (event) => {
-    setActive(event.target.id);
+function Header(prop) {
+  const [openModal, setOpenModal] = useState(false);
+  const [isModal1, setIsModal1] = useState(false);
+  const isCloseModal = () => {
+    setIsModal1(false);
+    setOpenModal(false);
   };
 
+  const changeModal = () => {
+    if (isModal1) {
+      setIsModal1(false);
+    } else {
+      setIsModal1(true);
+    }
+  };
   return (
     <header className="header">
       <div className="header-icons">
@@ -129,139 +130,34 @@ function Header() {
             <div class="dropdown-content">
               <ul className="dropdown-menu-ul">
                 <li>
-                  <Popup
-                  id="one"
-                    onOpen={() => setActive("1")}
-                    trigger={<a>Մուտք</a>}
-                    modal
-                    nested>
-                    {(close) => (
-                      <div className="modal">
-                        <div className="close-div">
-                          <a className="close" onClick={close}>
-                            &times;
-                          </a>
-                        </div>
-                        <div className="sign-in-up">
-                          <div className="sign-in">
-                            <a
-                              id={"1"}
-                              onClick={changeActive}
-                              className={
-                                active === "1" ? "activeState" : "notActive"
-                              }>
-                              Մուտք գործել
-                            </a>
-                          </div>
-                          <div className="sign-up">
-                            <a 
-                              id={"2"}
-                              onClick={() => {
-                                changeActive()}}
-                              className={
-                                active === "2" ? "activeState" : "notActive"
-                              }>
-                              Գրանցվել
-                            </a>
-                          </div>
-                        </div>
-                        <div className="content">
-                          <div className="icon-input">
-                            <FontAwesomeIcon
-                              className="icon"
-                              size="lg"
-                              icon={faUser}></FontAwesomeIcon>
-                            <input type="email" className="email"></input>
-                          </div>
-                          <div className="icon-input">
-                            <FontAwesomeIcon
-                              className="icon"
-                              size="lg"
-                              icon={faLock}></FontAwesomeIcon>
-                            <input type="password" className="password"></input>
-                          </div>
-                        </div>
-                        <div className="remember-pass">
-                          <input
-                            className="remember-pass-input"
-                            type={"checkbox"}></input>
-                          <p>Հիշել գաղտնաբառը</p>
-                        </div>
-                        <div className="actions">
-                          <div className="log-in">
-                            <a>Մուտք գործել</a>
-                          </div>
-                        </div>
-                        <div className="forget-pass">
-                          <p> Մոռացել ե՞ք գաղտնաբառը </p>
-                        </div>
-                      </div>
-                    )}
-                  </Popup>
+                  <a
+                    onClick={() => {
+                      setIsModal1(true);
+                      setOpenModal(true);
+                    }}>
+                    Մուտք
+                  </a>
                 </li>
                 <li>
-                  <Popup
-                    id="two"
-                    onOpen={() => setActive("2")}
-                    trigger={<a>Գրանցվել</a>}
-                    modal>
-                    {(close) => (
-                      <div className="modal1">
-                        <div className="close-div">
-                          <a className="close" onClick={close}>
-                            &times;
-                          </a>
-                        </div>
-                        <div className="sign-in-up">
-                          <div className="sign-in">
-                            <a
-                              key={1}
-                              id={"1"}
-                              onClick={changeActive}
-                              className={
-                                active === "1" ? "activeState" : "notActive"
-                              }>
-                              Մուտք գործել
-                            </a>
-                          </div>
-                          <div className="sign-up">
-                            <a
-                              key={2}
-                              id={"2"}
-                              onClick={changeActive}
-                              className={
-                                active === "2" ? "activeState" : "notActive"
-                              }>
-                              Գրանցվել{" "}
-                            </a>
-                          </div>
-                        </div>
-                        <div className="content">
-                          <div className="icon-input">
-                            <FontAwesomeIcon
-                              className="icon"
-                              size="lg"
-                              icon={faLock}></FontAwesomeIcon>
-                            <input type="" className="phone-number"></input>
-                          </div>
-                          <p className="sms-text">
-                            Ձեր հեռախոսահամարին կուղարկվի հաստատման SMS կոդ
-                          </p>
-                        </div>
-                        <div className="actions">
-                          <div className="log-in">
-                            <a>Շարունակել</a>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                  </Popup>
+                  <a
+                    onClick={() => {
+                      setIsModal1(false);
+                      setOpenModal(true);
+                    }}>
+                    Գրանցվել
+                  </a>
                 </li>
               </ul>
             </div>
           </li>
         </ul>
       </div>
+      <Modal
+        modal1={isModal1}
+        isCloseModal={isCloseModal}
+        openModal={openModal}
+        changeModal={changeModal}
+      />
     </header>
   );
 }
