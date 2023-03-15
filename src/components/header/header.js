@@ -31,28 +31,28 @@ function Header(prop) {
         <ul className="icons-ul">
           <li className="facebook">
             <a className="facebook" href="/">
-              <i class="icon-i">
+              <i className="icon-i">
                 <FontAwesomeIcon size="lg" icon={faFacebook}></FontAwesomeIcon>
               </i>
             </a>
           </li>
           <li className="instagram">
             <a className="instagram" href="/">
-              <i class="icon-i">
+              <i className="icon-i">
                 <FontAwesomeIcon size="lg" icon={faInstagram}></FontAwesomeIcon>{" "}
               </i>
             </a>
           </li>
           <li className="youtube">
             <a className="youtube" href="/">
-              <i class="icon-i">
+              <i className="icon-i">
                 <FontAwesomeIcon size="lg" icon={faYoutube}></FontAwesomeIcon>
               </i>
             </a>
           </li>
           <li className="linkedin">
             <a className="linkedin" href="/">
-              <i class="icon-i">
+              <i className="icon-i">
                 <FontAwesomeIcon size="lg" icon={faLinkedin}></FontAwesomeIcon>
               </i>
             </a>
@@ -79,7 +79,7 @@ function Header(prop) {
               <a className="menu-items-a" href="/">
                 Դասընթացներ
               </a>
-              <div class="dropdown-content">
+              <div className="dropdown-content">
                 <ul className="dropdown-menu-ul">
                   <li>
                     <a href="/">Վեբինարներ</a>
@@ -94,7 +94,7 @@ function Header(prop) {
               <a className="menu-items-a" href="/">
                 Պացիենտների համար
               </a>
-              <div class="dropdown-content">
+              <div className="dropdown-content">
                 <ul className="dropdown-menu-ul">
                   <li>
                     <a href="/">Իրադարձություններ</a>
@@ -109,7 +109,7 @@ function Header(prop) {
               <a className="menu-items-a" href="/">
                 Մեր Ակումբը
               </a>
-              <div class="dropdown-content">
+              <div className="dropdown-content">
                 <ul className="dropdown-menu-ul">
                   <li>
                     <a href="/">Մեր Մասին</a>
@@ -127,7 +127,7 @@ function Header(prop) {
             <a className="menu-last-item-a" href="/">
               Մուտք
             </a>
-            <div class="dropdown-content">
+            <div className="dropdown-content">
               <ul className="dropdown-menu-ul">
                 <li>
                   <a

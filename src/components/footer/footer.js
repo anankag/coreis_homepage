@@ -9,6 +9,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faUsers } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="footer">
@@ -30,7 +31,7 @@ function Footer() {
               <a href="/">Մեր թիմը</a>
             </li>
             <li className="about-us-li">
-              <a href="/">Մեր ակումբի մասին</a>
+              <Link to="/about">Մեր ակումբի մասին</Link>
             </li>
             <li className="about-us-li">
               <a href="/">Ինչպես դառնալ ակումբի անդամ</a>
@@ -94,7 +95,7 @@ function Footer() {
           <ul className="references-ul">
             <h4 className="references-h4">Օգտակար հղումներ</h4>
             <li className="references-li">
-              <a href="/">Ավելացնել կլինիկական քեյս</a>
+              <Link to="/product">Ավելացնել կլինիկական քեյս</Link>
             </li>
             <li className="references-li">
               <a href="/">Իրադարձություններ</a>

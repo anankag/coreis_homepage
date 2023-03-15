@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
@@ -10,7 +10,16 @@ function Modal(props) {
   const [mail, setMail] = useState("");
   const [password, setPassword] = useState("");
   const [number, setNumber] = useState("");
-
+  const submit = () => {
+    const data = {
+      mail,
+      password,
+    };
+    axios
+      .post("https://coreis.am/login", data)
+      .then((response) => console.log(response.data))
+      .catch((error) => console.log(error));
+  };
 
   return (
     <Popup open={props.openModal} modal>
@@ -83,7 +92,7 @@ function Modal(props) {
               </div>
               <div className="actions">
                 <div className="log-in">
-                  <a>Մուտք գործել</a>
+                  <a onClick={submit}>Մուտք գործել</a>
                 </div>
               </div>
               <div className="forget-pass">
@@ -110,7 +119,17 @@ function Modal(props) {
               </p>
               <div className="actions">
                 <div className="log-in">
-                  <a>Շարունակել</a>
+                  <a
+                    onClick={() => {
+                      axios
+                        .post("https://coreis.am/register-phone", {
+                          phone: number,
+                        })
+                        .then((response) => console.log(response.data))
+                        .catch((error) => console.log(error.response));
+                    }}>
+                    Շարունակել
+                  </a>
                 </div>
               </div>
             </div>
