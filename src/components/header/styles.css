@@ -60,13 +60,17 @@
 .left-menu {
   display: flex;
   justify-content: space-between;
-  /* position: fixed;
-  height: 80px;
+
+}
+.is-sticky {
+  position: fixed;
+  /* margin: 0 auto; */
+  width: 100%;
   z-index: 9999;
   background-color: white;
   top:0;
-  width:100%;
-  margin-bottom:50px */
+  margin-bottom:65px;
+  animation: 600ms ease-in-out 0s normal none 1 running fadeInDown;
 }
 
 .menu-last-item li {

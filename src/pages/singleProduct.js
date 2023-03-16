@@ -18,11 +18,16 @@ function SingleProduct() {
     getSingleProductInfo();
   }, []);
 
-  console.log()
+  console.log();
   return (
     <>
       <Header />
-      <div>{singleProduct.description}</div>
+      <p style={{ margin: "100px 50px 10px" }}>{singleProduct.title}</p>
+      <p style={{ margin: "20px 50px" }}>Category: {singleProduct.category} </p>
+      <p style={{ margin: "10px 50px" }}>Brand: {singleProduct.brand} </p>
+      <p style={{ margin: "10px 50px" }}>
+        Description: {singleProduct.description}
+      </p>
       <Footer />
     </>
   );

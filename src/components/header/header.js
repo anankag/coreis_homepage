@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,7 +10,29 @@ import {
 import logo from "../../assets/images/logo.png";
 import Modal from "../modal/modal";
 
-function Header(prop) {
+function Header() {
+
+  const [sticky, setSticky] = useState("");
+
+  // on render, set listener
+  useEffect(() => {
+    console.log("hello");
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  }, []);
+
+  const isSticky = () => {
+    /* Method that will fix header after a specific scrollable */
+    const scrollTop = window.scrollY;
+    const stickyClass = scrollTop >= 250 ? "is-sticky" : "left-menu";
+    setSticky(stickyClass);
+    console.log(stickyClass);
+  };
+
+  const classes = `header-section d-none d-xl-block ${sticky}`;
+  
   const [openModal, setOpenModal] = useState(false);
   const [isModal1, setIsModal1] = useState(false);
   const isCloseModal = () => {
@@ -59,7 +81,7 @@ function Header(prop) {
           </li>
         </ul>
       </div>
-      <div className="left-menu">
+      <div className="left-menu" >
         <div className="d-flex">
           <a className="logo" href="/">
             <img className="logo" src={logo} alt="logo" />
